@@ -1,0 +1,92 @@
+body {
+  margin: 0px;
+}
+
+header {
+  position: relative;
+  background-color: #3A9BDC;
+  padding: 30px;
+  display: block;
+}
+
+.icon {
+  font-size: 30px;
+  display: inline;
+}
+
+#people_circle_icon {
+  float: right;
+}
+
+#greeting_text {
+  text-align: center;
+}
+
+#notifications {
+  display: flex;
+  padding: 20px;
+}
+
+#notification_text {
+  padding-left: 20px;
+}
+
+.card {
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card_item {
+  padding: 20px;
+  margin: 20px;
+  border: 2px solid grey;
+  /* flex-direction: column;
+  margin-right: 10px;
+  flex: 1;
+  background-color: aqua;
+  font-size: 1.4rem;
+  padding: 5px 0;
+  border: 2px solid green; */
+}
+
+.text_bold {
+  font-weight: bold;
+}
+
+/* .navbar {
+  text-align: center;
+  background-color: #3A9BDC;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border: 2px solid grey;
+  padding: 10px;
+} */
+
+.navbar {
+  width: 100%;
+  bottom: 0;
+  background-color: #3A9BDC;
+  text-align: center;
+  overflow: hidden;
+  position: fixed;
+}
+
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
