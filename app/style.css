@@ -1,92 +1,99 @@
 body {
   margin: 0px;
+  font-size: 40px;
 }
 
 header {
-  position: relative;
   background-color: #3A9BDC;
-  padding: 30px;
+  padding: 20px;
   display: block;
+  border-radius: 0px 0px 50px 50px;
+}
+
+main {
+  padding: 40;
 }
 
 .icon {
-  font-size: 30px;
+  font-size: 80px;
+}
+
+.start-icons {
+  display: flex;
+  padding-top: 40;
+  padding-left: 40;
+  padding-right: 40;
+  justify-content: space-between;
+}
+
+.notifications {
+  padding: 1;
+}
+
+.notifications p {
+  padding: 20px;
+  display: inline;
+  justify-content: right;
+  text-align: right;
+}
+
+.notifications i {
+  padding: 20px;
   display: inline;
 }
 
-#people_circle_icon {
-  float: right;
+.cards-container {
+  padding: 20px;
 }
 
-#greeting_text {
+.cards-container div {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  padding: 10px;
+  margin: 0 20 40 20;
+  border: 2px solid grey;
   text-align: center;
 }
 
-#notifications {
-  display: flex;
-  padding: 20px;
-}
-
-#notification_text {
-  padding-left: 20px;
-}
-
-.card {
-  width: 100%;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-}
-
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.card_item {
-  padding: 20px;
-  margin: 20px;
-  border: 2px solid grey;
-  /* flex-direction: column;
-  margin-right: 10px;
-  flex: 1;
-  background-color: aqua;
-  font-size: 1.4rem;
-  padding: 5px 0;
-  border: 2px solid green; */
+.cards-container div:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
 }
 
 .text_bold {
   font-weight: bold;
 }
 
-/* .navbar {
+.text_center {
   text-align: center;
-  background-color: #3A9BDC;
-  overflow: hidden;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  border: 2px solid grey;
-  padding: 10px;
-} */
-
-.navbar {
-  width: 100%;
-  bottom: 0;
-  background-color: #3A9BDC;
-  text-align: center;
-  overflow: hidden;
-  position: fixed;
 }
 
-.navbar a {
-  float: left;
-  text-align: center;
+.bottom-navbar {
+  background-color: #3A9BDC;
+  display: flex; 
+  justify-content: space-around; 
+  align-items: center; 
+  position: sticky;
+  margin-top: 20;
+  bottom: 0;
+  width: 100%;
+}
+
+.bottom-navbar a {
   padding: 12px;
   color: white;
   text-decoration: none;
-  font-size: 17px;
 }
 
-.navbar a:hover {
+/* .bottom-navbar a:hover {
   background-color: #000;
+} */
+
+.bottom-menu-item {
+  display: block;
+  text-align: center;
+  padding: 10px;
+}
+
+.bottom-menu-item i {
+  font-size: 60;
 }
