@@ -4,7 +4,7 @@ body {
 }
 
 header {
-  background-color: #3A9BDC;
+  background-color: #3a9bdc59;
   padding: 20px;
   display: block;
   border-radius: 0px 0px 50px 50px;
@@ -67,6 +67,10 @@ main {
   text-align: center;
 }
 
+#greetings_text {
+  color: rgba(0, 0, 0, 0.8);
+}
+
 .bottom-navbar {
   background-color: #3A9BDC;
   display: flex; 
@@ -96,4 +100,14 @@ main {
 
 .bottom-menu-item i {
   font-size: 60;
+}
+
+/* estilo para a largura do logo. */
+.svg_logo{
+  width: 300px;
+}
+
+/* estilo para a cor do logo. */
+.path_logo{
+  fill: #126ae2;
 }
