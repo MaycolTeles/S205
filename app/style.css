@@ -1,10 +1,19 @@
+:root {
+  --cor-click: #126ae2; /* Click */
+  --cor-sombra: #0a599b; /* Azul Escuro */
+  --cor-text: black; /* Preto */
+  --cor-background1: white; /* Azul claro */
+  --cor-background2: #3a9bdc59; /* Verde Escuro */
+}
+
 body {
   margin: 0px;
   font-size: 40px;
+  background-color: var(--cor-background1);
 }
 
 header {
-  background-color: #3a9bdc59;
+  background-color: var(--cor-background2);
   padding: 20px;
   display: block;
   border-radius: 0px 0px 50px 50px;
@@ -88,9 +97,6 @@ main {
   text-decoration: none;
 }
 
-/* .bottom-navbar a:hover {
-  background-color: #000;
-} */
 
 .bottom-menu-item {
   display: block;
@@ -102,12 +108,32 @@ main {
   font-size: 60;
 }
 
-/* estilo para a largura do logo. */
 .svg_logo{
   width: 300px;
 }
 
-/* estilo para a cor do logo. */
 .path_logo{
   fill: #126ae2;
+}
+
+
+#drawer {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+#drawer_option {
+  position: relative;
+  padding: 40px;
+  display: "block";
+  cursor: pointer;
+  font-family: "Arimo", sans-serif;
+  font-optical-sizing: auto;
 }
