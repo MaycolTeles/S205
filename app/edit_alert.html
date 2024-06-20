@@ -17,57 +17,60 @@
 	</header>
 	<main>
 		<h1 class="text_center">
-			<p style="margin: 0;">
+			<p style="margin-bottom: 160px;">
 				Editar Alerta
 			</p>
 		</h1>
-
-		<form>
-			<h2>
-				Tipo de Alerta:
-			</h2>
-			<div class="form-check">
-				<input type="checkbox" class="form-check-input" name="notification" value="notification">
-				<label>Notificação</label>
-			</div>
-			<div class="form-check">
-				<input type="checkbox" class="form-check-input" name="whatsapp" value="whatsapp">
-				<label>WhatsApp</label>
-			</div>
-			<div class="form-check">
-				<input type="checkbox" class="form-check-input" name="sms" value="sms">
-				<label>SMS</label>
-			</div>
-			<div class="form-check">
-				<input type="checkbox" class="form-check-input" name="email" value="email">
-				<label>E-mail</label>
-			</div>
-
-			<h2>
-				Alertar com:
-			</h2>
-			<div class="form-check">
-				<input type="checkbox" class="form-check-input" name="five_min" value="five_min">
-				<label>5 minutos antes</label>
-			</div>
-			<div class="form-check">
-				<input type="checkbox" class="form-check-input" name="fifteen_min" value="fifteen_min">
-				<label>15 minutos antes</label>
-			</div>
-			<div class="form-check">
-				<input type="checkbox" class="form-check-input" name="one_hour" value="one_hour">
-				<label>Uma hora antes</label>
-			</div>
-			<div class="form-check">
-				<input type="checkbox" class="form-check-input" name="two_hours" value="two_hours">
-				<label>Duas horas antes</label>
-			</div>
-
-			<button type="submit" id="submit_button" onclick="history.back()">Submit</button>
-
-		</form>
-
+	
+		<div class="checkbox-group">
+			<h3>Tipo de Alerta:</h3>
+			<form>
+				<div class="form-check">
+					<input type="checkbox" class="form-check-input" name="notification" value="notification">
+					<label>Notificação</label>
+				</div>
+				<div class="form-check">
+					<input type="checkbox" class="form-check-input" name="whatsapp" value="whatsapp">
+					<label>WhatsApp</label>
+				</div>
+				<div class="form-check">
+					<input type="checkbox" class="form-check-input" name="sms" value="sms">
+					<label>SMS</label>
+				</div>
+				<div class="form-check">
+					<input type="checkbox" class="form-check-input" name="email" value="email">
+					<label>E-mail</label>
+				</div>
+			</form>
+		</div>
+	
+		<div class="checkbox-group">
+			<h3>Alertar com:</h3>
+			<form>
+				<div class="form-check">
+					<input type="checkbox" class="form-check-input" name="five_min" value="five_min">
+					<label>5 minutos antes</label>
+				</div>
+				<div class="form-check">
+					<input type="checkbox" class="form-check-input" name="fifteen_min" value="fifteen_min">
+					<label>15 minutos antes</label>
+				</div>
+				<div class="form-check">
+					<input type="checkbox" class="form-check-input" name="one_hour" value="one_hour">
+					<label>Uma hora antes</label>
+				</div>
+				<div class="form-check">
+					<input type="checkbox" class="form-check-input" name="two_hours" value="two_hours">
+					<label>Duas horas antes</label>
+				</div>
+			</form>
+		</div>
+	
+		<div style="text-align: center;">
+			<button type="button" class="submit-button" onclick="history.back()">Salvar</button>
+		</div>
 	</main>
+	
 	<nav class="bottom-navbar">
 		<a class="bottom-menu-item" href="index.html">
             <i class="bi bi-house-door-fill bottom-menu-item"></i>Home
